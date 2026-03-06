@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Krishna Nam Jap Counter</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#ff6a00">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔱 Krishna Nam Jap 🔱</h1>
+
+<select id="namSelect">
+
+<option value="Radha Radha">Radha Radha</option>
+<option value="Gayatri Mantra">Gayatri Mantra</option>
+<option value="Ram">Ram</option>
+<option value="Om Hanumate Namaha">Om Hanumate Namaha</option>
+
+</select>
+
+<div class="buttons">
+
+<button onclick="setCount(11)">11</button>
+<button onclick="setCount(108)">108</button>
+<button onclick="setCount(1011)">1011</button>
+<button onclick="customCount()">Custom</button>
+
+</div>
+
+<div class="mala">
+
+<div class="counter" onclick="increaseCount()">
+
+<h2 id="selectedName">Radha Radha</h2>
+<span id="currentCount">0</span>
+
+</div>
+
+</div>
+
+<h2>📿 History</h2>
+
+<div id="history"></div>
+
+<button class="clear-btn" onclick="clearHistory()">Clear History</button>
+
+</div>
+
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<h2 id="completeText"></h2>
+
+<button onclick="closePopup()">Close</button>
+
+</div>
+
+</div>
+
+
+<audio id="mantraSound" src="sounds/mantra.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
